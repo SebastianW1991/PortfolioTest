@@ -1,10 +1,10 @@
 import org.junit.Test;
 import org.openqa.selenium.By;
 
-public class testPortfolioURL extends BaseTest {
+public class TestPortfolioURL extends BaseTest {
     String properPortfolioURL ="https://sebastianw1991.github.io/#portfolio";
     @Test
-    public void testPortfolioURL(){
+    public void TestPortfolioURL(){
         driver.findElement(By.xpath("/html/body/div[1]/ul/li[4]/a\n")).click();
         int portfolioURLCompare = driver.getCurrentUrl().compareTo(properPortfolioURL);
         System.out.println(portfolioURLCompare);
