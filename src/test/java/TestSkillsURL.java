@@ -2,7 +2,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 
 public class TestSkillsURL extends BaseTest {
- 
+
     @Test
     public void testSkillsURL(){
         driver.findElement(By.xpath("/html/body/div[1]/ul/li[3]/a\n")).click();
