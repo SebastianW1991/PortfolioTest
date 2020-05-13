@@ -1,5 +1,6 @@
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Wait;
 
 public class TestSkillsURL extends BaseTest {
 
@@ -7,7 +8,7 @@ public class TestSkillsURL extends BaseTest {
     public void testSkillsURL(){
         driver.findElement(By.xpath("/html/body/div[1]/ul/li[3]/a\n")).click();
 
-        assertEquals(driver.getCurrentUrl(), "https://sebastianw1991.github.io/#skills");
+    assertEquals(driver.getCurrentUrl(), "https://sebastianw1991.github.io/#skills");
 
         driver.navigate().back();
     }
