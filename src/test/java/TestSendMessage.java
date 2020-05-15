@@ -12,7 +12,7 @@ public class TestSendMessage extends BaseTest{
         name.sendKeys("Seba");
         email.sendKeys("mail@.com");
         message.sendKeys("Test");
-        driver.findElement(By.xpath("/html/body/div[6]/form[1]/button[1]")).click();
+        driver.findElement(By.xpath("/html/body/div[5]/div[2]/form[1]/button[1]\n")).click();
          int success =assertEquals(driver.getCurrentUrl(), "https://formspree.io/thanks?next=https%3A%2F%2Fsebastianw1991.github.io%2F&language=pl");
         if (success == 0)
             System.out.println("sukces");
